@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/papel-de-parede-projeto-burguer.avif');
+    background-size: cover;
+    background-position:center ;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+button{
+    background-color: #79cb15;
+    border: none;
+    border-radius:  5px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    color: #000000;
+    width: 110px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+li {
+     border: 2px solid #8133ff;
+     border-radius: 5px;
+     padding: 5px;
+     background-color: #000000;
+
+}
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    height: 186.8px;
+}
+
+p {
+    color: #ffffff;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #79cb15;
+}
+
+.li {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 600px) {
+    button {
+        width: 90px;
+        padding: 8px;
+    }
+
+    .container-buttons {
+        gap: 10px;
+    }
+
+    ul {
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
